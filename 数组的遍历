@@ -1,0 +1,29 @@
+package com.it;
+/*
+ * 求数组的长度：
+ * x.length
+ * 通过下标访问数组中的元素
+ * 下标：从0开始，到数组长度-1
+ * 如：int[]scores={89,90};
+ * 访问最后一个元素值： int lastElement = scores[scores.length-1];
+ * 数组的遍历：依次取出数组中的每一元素
+ * 遍历方式一：普通的for循环
+ * 语法：for (int i = 0; i <数组的长度; i++) {
+		数组中元素的类型 变量 = 数组名[i]；
+	}
+ */
+public class Test {
+public static void main(String[] args) {
+	int[] scores= {33,45,22,57,87,55};
+	int len =scores.length;
+	for (int i = 0; i < len; i++) {
+		int score =scores[i];
+		System.out.println(score);
+	}
+	//forearch 遍历方式二
+	for(int x:scores) {
+		System.out.println(x);
+	}
+	
+  }
+}
